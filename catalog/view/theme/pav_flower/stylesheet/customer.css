@@ -1,0 +1,137 @@
+fieldset {
+    padding: 10px;
+    margin: 5px;
+    /* border: 0; */
+    background-color: #c3e8a3;
+    min-width: 0;
+}
+
+/* ==============================================
+                    Header
+================================================= */
+
+#header-main .center-header-block{
+    margin-left:150px;
+    position: relative;
+    padding: 10px 20px;
+    text-align: center;
+}
+#header-main #search  {
+    width: 300px;
+    margin-left: 50px;
+    padding-top: 26px;
+    float: left;
+}
+#header-main .center-header-block span{
+    font-size: 14px;
+    font-weight: 400;
+}
+#search input {
+    padding: 0 50px;
+    border: solid 1px #2b542c;
+}
+#header-main .wishlist{
+    position: absolute;
+    top:30px;
+    float: right;
+}
+#search .fa-search,#wishlist-total .fa-heart,#cart .icon-cart{
+    font-size:25px;
+    color:#406618 ;
+}
+
+#search fa-search,#wishlist-total .fa-heart:hover{
+    color: #81cd30;
+}
+
+#top-links .setting {
+    display: none;
+}
+.clearfix:after {
+    content: "."; /* добавить содержимое: "." */
+    display: block;  /* сделать блоком, т.к. inline не может иметь clear */
+    clear: both;  /* с обеих сторон clear */
+    visibility: hidden; /* сделать невидимым, зачем нам точка внизу? */
+    height: 0;  /* сделать высоту 0, чтобы не занимал место */
+}
+
+/*============================================================
+                Menu
+============================================================= */
+ul.navbar-nav > li > a {
+    font-size: 11px;
+    font-weight: 500;
+    color:#406618 ;
+}
+
+
+/*===========================================================
+                      Media
+============================================================= */
+
+@media (min-width: 992px) and (max-width: 1100px) {
+   .wishlist{
+        display: none;
+    }
+    #top-links .setting {
+        display: block;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .center-header-block .wishlist{
+        display: none;
+    }
+    #top .phones{
+        display: none;
+    }
+    .wishlist,#cart-total{
+        display: none;
+    }
+    #top-links .setting {
+        display: block;
+    }
+
+}
+@media (max-width: 767px) {
+
+    #top .pull-right{
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    .wishlist,#cart-total{
+        display: none;
+    }
+    #header-main #logo-theme a{
+        width: 88px;
+        height: 70px;
+        background-size: cover;
+    }
+    #header-main .wishlist{
+        display: none;
+    }
+    #header-main .center-header-block{
+        margin: 5px;
+        padding: 5px;
+    }
+    #header-main .logo{
+        height: 90px;
+    }
+    #search {
+            display: inline-block;
+            float: right;
+            top: 5px;
+            max-width: 200px;
+        }
+    #search input {
+        width: 50%;
+        margin-left: 10px;
+        padding: 0 10px;
+    }
+    #header-main .center-header-block span {
+        font-size: 10px;
+        font-weight: 100;
+    }
+    #top-links .setting {
+        display: block;
+    }
+}

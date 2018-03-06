@@ -1,0 +1,1 @@
+<?php/*|[{"name":"\u0406\u043d\u0442\u0435\u0440\u043d\u0435\u0442 \u043c\u0430\u0433\u0430\u0437\u0438\u043d","path":"\/Applications\/XAMPP\/xamppfiles\/htdocs\/opencart2"}]|*/?>
